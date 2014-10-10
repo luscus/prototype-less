@@ -22,7 +22,7 @@ Execute following line
 
 ## Methods
 
-Method Matrix (context/resolving time)
+Method Matrix (used context to [resolving time](http://programmers.stackexchange.com/a/200123))
 
  Used Context | Early Bound  | Late Bound    | Later Bound (State Machines)
 ------------- | ------------ | ------------- | -------------
