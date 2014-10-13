@@ -26,8 +26,8 @@ Method Matrix (used context to [resolving time](http://programmers.stackexchange
 
  Used Context | Early Bound  | Late Bound    | Later Bound (State Machines)
 ------------- | ------------ | ------------- | -------------
-BaseObject    | mixin        | delegate      | laterDelegate
-[MetaObject](http://en.wikipedia.org/wiki/Metaobject)    | privateMixin | forward       | laterForward
+BaseObject    | mixin        | delegate      | dynamicDelegate
+[MetaObject](http://en.wikipedia.org/wiki/Metaobject)    | privateMixin | forward       | dynamicForward
 
 ### mixin
 
@@ -53,7 +53,8 @@ Same as `mixin` but the properties related to the injected behavior are kept pri
 
     // extends a domain with behavious,
     // but keeps behaviour specific properties private
-    // here: this.chosenCareer
+    // example here: this.chosenCareer
+    // the property won't be attached to Object "raganwald"
     pless.privateMixin(raganwald, hasCareer);
 
 ### forward
@@ -74,7 +75,7 @@ Parameters:
 
 Creates a relationship between Objects. Here the function is provided by the metaobject and it is executed using the baseobject's context.
 
-### laterForward
+### dynamicForward
 
 Parameters:
 
@@ -84,7 +85,7 @@ Parameters:
 
 Same as `forward` but the target of the forwarding (metaobject) is late bound: it is solved at run-time and opens applications  for modeling classes of behaviour that change dynamically (as state machines).
 
-### laterDelegate
+### dynamicDelegate
 
 Parameters:
 
