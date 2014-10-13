@@ -1,4 +1,5 @@
 # [prototype-less](https://github.com/luscus/prototype-less)
+[![NPM version](https://badge.fury.io/js/prototype-less.svg)](http://badge.fury.io/js/prototype-less)
 [![dependencies](https://david-dm.org/luscus/prototype-less.svg)](https://david-dm.org/luscus/prototype-less)
 [![devDependency Status](https://david-dm.org/luscus/prototype-less/dev-status.svg?theme=shields.io)](https://david-dm.org/luscus/prototype-less#info=devDependencies)
 
@@ -50,6 +51,17 @@ Parameters:
 - `metaObject`: the template to be applied to the baseObject.
 
 Same as `mixin` but the properties related to the injected behavior are kept private.
+
+    var hasCareer = {
+      career: function () {
+        return this.chosenCareer;
+      },
+      setCareer: function (career) {
+        this.chosenCareer = career;
+        return this;
+      },
+      chosenCareer: 'unemployed' // initial value
+    };
 
     // extends a domain with behavious,
     // but keeps behaviour specific properties private

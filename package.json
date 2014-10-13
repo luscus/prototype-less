@@ -1,34 +1,36 @@
 {
-    "author": "https://github.com/luscus/prototype-less/graphs/contributors",
-    "name": "prototype-less",
-    "description": "Provides helper functions to structure software using prototype-less techniques: mixin, fowarding and delegation.",
-    "version": "0.0.2",
-    "keywords": [
-        "mixin",
-        "forwarding",
-        "delegation",
-        "raganwald"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/luscus/prototype-less.git"
-    },
-    "homepage": "https://github.com/luscus/prototype-less",
-    "bugs": "https://github.com/luscus/prototype-less/issues",
-    "main": "./lib/prototypeless.js",
-    "dependencies": {
-        "node.extend": "1.1.2"
-    },
-    "devDependencies": {
-        "grunt": "0.4.5",
-        "grunt-contrib-jshint": "0.10.0",
-        "load-grunt-tasks": "0.6.0"
-    },
-    "optionalDependencies": {},
-    "licenses": [
-        {
-            "type": "LGPL",
-            "url": "https://www.gnu.org/licenses/lgpl.html"
-        }
-    ]
+  "author": "https://github.com/luscus/prototype-less/graphs/contributors",
+  "name": "prototype-less",
+  "description": "Provides helper functions to structure software using prototype-less techniques: mixin, fowarding and delegation.",
+  "version": "0.0.2",
+  "keywords": [
+    "mixin",
+    "forwarding",
+    "delegation",
+    "raganwald"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/luscus/prototype-less.git"
+  },
+  "homepage": "https://github.com/luscus/prototype-less",
+  "bugs": "https://github.com/luscus/prototype-less/issues",
+  "main": "./lib/prototypeless.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-contrib-jshint": "0.10.0",
+    "load-grunt-tasks": "0.6.0",
+    "grunt-mocha-test": "0.12.1",
+    "should": "4.0.4",
+    "mocha": "1.21.4"
+  },
+  "optionalDependencies": {},
+  "licenses": [
+    {
+      "type": "LGPL",
+      "url": "https://www.gnu.org/licenses/lgpl.html"
+    }
+  ]
 }
