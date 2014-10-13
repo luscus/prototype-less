@@ -26,8 +26,8 @@ var pless = require('../lib/prototypeless'),
 
 
 
-console.log(pless.mixin(raganwald, person));
-
+pless.mixin(raganwald, person);
 pless.privateMixin(raganwald, hasCareer).setCareer('programmer')
 
-console.log(raganwald);
+console.log('raganwald: ',raganwald);
+console.log('raganwald.career(): ', raganwald.career());
