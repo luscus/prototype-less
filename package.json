@@ -2,8 +2,10 @@
   "author": "https://github.com/luscus/prototype-less/graphs/contributors",
   "name": "prototype-less",
   "description": "Provides helper functions to structure software using prototype-less techniques: mixin, fowarding and delegation.",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "keywords": [
+    "prototype",
+    "less",
     "mixin",
     "forwarding",
     "delegation",
@@ -17,6 +19,7 @@
   "bugs": "https://github.com/luscus/prototype-less/issues",
   "main": "./lib/prototypeless.js",
   "dependencies": {
+    "node.extend": "1.1.2"
   },
   "devDependencies": {
     "grunt": "0.4.5",
@@ -27,10 +30,5 @@
     "mocha": "1.21.4"
   },
   "optionalDependencies": {},
-  "licenses": [
-    {
-      "type": "LGPL",
-      "url": "https://www.gnu.org/licenses/lgpl.html"
-    }
-  ]
+  "license": "MIT/X"
 }
