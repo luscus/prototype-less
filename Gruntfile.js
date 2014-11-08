@@ -8,6 +8,7 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask('default', ['jshint', 'mochaTest']);
+  grunt.registerTask('test', ['mochaTest']);
 
   // Project configuration.
   grunt.initConfig({
