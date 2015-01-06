@@ -3,9 +3,6 @@ module.exports = function(grunt) {
   // load all grunt tasks matching the `grunt-*` pattern
   require('load-grunt-tasks')(grunt);
 
-  // Add the grunt-mocha-test tasks.
-  grunt.loadNpmTasks('grunt-mocha-test');
-
   // Default task(s).
   grunt.registerTask('default', ['jshint', 'mochaTest']);
   grunt.registerTask('test', ['mochaTest']);
