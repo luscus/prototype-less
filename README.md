@@ -5,7 +5,7 @@
 
 The whole package was inspired by a post by Reginald “Raganwald” Braithwaite: [Mixins, Forwarding, and Delegation in JavaScript](http://raganwald.com/2014/04/10/mixins-forwarding-delegation.html)
 
-Provides helper functions to structure software using prototype-less techniques: mixin, fowarding and delegation.
+Provides helper functions to structure software using prototype-less techniques: mixin, forwarding and delegation.
 
 ## Installation
 
@@ -39,7 +39,7 @@ Parameters:
 
 Our person object is a template (metaobject), it provides some functionality to be mixed into an object.
 
-    // extends a domain with behavious,
+    // extends a domain with behaviours,
     // but behaviours access and modifies baseobject's properties
     pless.mixin(raganwald, person);
 
@@ -63,7 +63,7 @@ Same as `mixin` but the properties related to the injected behavior are kept pri
       chosenCareer: 'unemployed' // initial value
     };
 
-    // extends a domain with behavious,
+    // extends a domain with behaviours,
     // but keeps behaviour specific properties private
     // example here: this.chosenCareer
     // the property won't be attached to Object "raganwald"
