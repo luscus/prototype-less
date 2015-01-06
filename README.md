@@ -7,6 +7,8 @@ The whole package was inspired by a post by Reginald “Raganwald” Braithwaite
 
 Provides helper functions to structure software using prototype-less techniques: mixin, forwarding and delegation.
 
+The general idea is to separate the model domain from the implementation domain: separate properties (data) from behaviours (methods).
+
 ## Installation
 
 ### Node Dependency
