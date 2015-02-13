@@ -4,7 +4,7 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Default task(s).
-  grunt.registerTask('default', ['jshint', 'mochaTest']);
+  grunt.registerTask('default', ['jshint', 'mochaTest', 'grunt-license-report']);
   grunt.registerTask('test', ['mochaTest']);
 
   // Project configuration.
@@ -17,9 +17,16 @@ module.exports = function(grunt) {
       test: {
         options: {
           bail: true,
+          "no-exit": true,
           reporter: 'dot'
         },
-        src: ['test/**/*.js']
+        src: ['test/**/*.spec.js']
+      }
+    },
+    "grunt-license-report": {
+      output: {
+        path: './report/licenses',
+        format:'html'
       }
     }
   });

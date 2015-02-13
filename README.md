@@ -1,7 +1,14 @@
 # [prototype-less](https://github.com/luscus/prototype-less)
-[![NPM version](https://badge.fury.io/js/prototype-less.svg)](http://badge.fury.io/js/prototype-less)
-[![dependencies](https://david-dm.org/luscus/prototype-less.svg)](https://david-dm.org/luscus/prototype-less)
-[![devDependency Status](https://david-dm.org/luscus/prototype-less/dev-status.svg?theme=shields.io)](https://david-dm.org/luscus/prototype-less#info=devDependencies)
+
+[![NPM](https://nodei.co/npm/prototype-less.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/prototype-less/)
+[![NPM](https://nodei.co/npm-dl/prototype-less.png?months=9&height=3)](https://nodei.co/npm/prototype-less/)
+
+[![NPM version](https://img.shields.io/npm/v/prototype-less.svg?style=flat)](https://www.npmjs.com/package/prototype-less "View this project on NPM")
+[![David](https://img.shields.io/david/luscus/prototype-less.svg?style=flat)](https://david-dm.org/luscus/prototype-less)
+[![David](https://img.shields.io/david/dev/luscus/prototype-less.svg?style=flat)](https://david-dm.org/luscus/prototype-less#info=devDependencies)
+[![NPM license](https://img.shields.io/npm/l/prototype-less.svg?style=flat)](https://www.npmjs.com/package/prototype-less "View this project on NPM")
+[![Omniref](https://img.shields.io/badge/Omniref-docs-orange.svg?style=flat)](https://www.omniref.com/js/npm/prototype-less)
+[![flattr](https://img.shields.io/badge/flattr-donate-yellow.svg?style=flat)](http://flattr.com/thing/3817419/luscus-on-GitHub)
 
 The whole package was inspired by a post by Reginald “Raganwald” Braithwaite: [Mixins, Forwarding, and Delegation in JavaScript](http://raganwald.com/2014/04/10/mixins-forwarding-delegation.html)
 
@@ -29,10 +36,10 @@ Method Matrix (used context to [resolving time](http://programmers.stackexchange
 
  Used Context | Early Bound  | Late Bound    | Later Bound (State Machines)
 ------------- | ------------ | ------------- | -------------
-BaseObject    | mixin        | delegate      | dynamicDelegate
-[MetaObject](http://en.wikipedia.org/wiki/Metaobject)    | privateMixin | forward       | dynamicForward
+BaseObject    | [mixin](#mixin)        | [delegate](#delegate)      | [dynamicDelegate](#dynamicDelegate)
+[MetaObject](http://en.wikipedia.org/wiki/Metaobject)    | [privateMixin](#privateMixin) | [forward](#forward)       | [dynamicForward](#dynamicForward)
 
-### mixin
+### <a name="mixin"></a> mixin
 
 Parameters:
 
@@ -45,7 +52,7 @@ Our person object is a template (metaobject), it provides some functionality to 
     // but behaviours access and modifies baseobject's properties
     pless.mixin(raganwald, person);
 
-### privateMixin
+### <a name="privateMixin"></a> privateMixin
 
 Parameters:
 
@@ -71,7 +78,7 @@ Same as `mixin` but the properties related to the injected behavior are kept pri
     // the property won't be attached to Object "raganwald"
     pless.privateMixin(raganwald, hasCareer);
 
-### forward
+### <a name="forward"></a> forward
 
 Parameters:
 
@@ -80,7 +87,7 @@ Parameters:
 
 Creates a relationship between Objects. Here the function is provided by the metaobject and it is executed using the metaobject's context.
 
-### delegate
+### <a name="delegate"></a> delegate
 
 Parameters:
 
@@ -89,7 +96,7 @@ Parameters:
 
 Creates a relationship between Objects. Here the function is provided by the metaobject and it is executed using the baseobject's context.
 
-### dynamicForward
+### <a name="dynamicForward"></a> dynamicForward
 
 Parameters:
 
@@ -99,7 +106,7 @@ Parameters:
 
 Same as `forward` but the target of the forwarding (metaobject) is late bound: it is solved at run-time and opens applications  for modeling classes of behaviour that change dynamically (as state machines).
 
-### dynamicDelegate
+### <a name="dynamicDelegate"></a> dynamicDelegate
 
 Parameters:
 
@@ -112,12 +119,10 @@ Same as `delegate` but the target of the delegation (metaobject) is late bound: 
 
 ------------
 
-Copyright (c) 2014 Luscus (luscus.redbeard@gmail.com)
+Copyright (c) 2015 Luscus (luscus.redbeard@gmail.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-Except as contained in this notice, the name(s) of the above copyright holders shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
