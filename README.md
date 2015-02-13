@@ -1,7 +1,6 @@
 # [prototype-less](https://github.com/luscus/prototype-less)
 
 [![NPM](https://nodei.co/npm/prototype-less.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/prototype-less/)
-[![NPM](https://nodei.co/npm-dl/prototype-less.png?months=9&height=3)](https://nodei.co/npm/prototype-less/)
 
 [![NPM version](https://img.shields.io/npm/v/prototype-less.svg?style=flat)](https://www.npmjs.com/package/prototype-less "View this project on NPM")
 [![David](https://img.shields.io/david/luscus/prototype-less.svg?style=flat)](https://david-dm.org/luscus/prototype-less)

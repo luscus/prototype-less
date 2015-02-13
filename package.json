@@ -2,7 +2,7 @@
   "author": "https://github.com/luscus/prototype-less/graphs/contributors",
   "name": "prototype-less",
   "description": "Provides helper functions to structure software using prototype-less techniques: mixin, fowarding and delegation.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "keywords": [
     "prototype",
     "less",

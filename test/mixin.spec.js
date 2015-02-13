@@ -1,5 +1,11 @@
-var should = require('should'),
-    pless = require('../lib/prototypeless'),
+/* jshint node:true */
+/* jshint expr:true*/
+/* global describe */
+/* global it */
+'use strict';
+require('chai').should();
+
+var pless = require('../lib/prototypeless'),
     raganwald = {
       firstName: 'Reginald',
       lastName: 'Braithwaite',
