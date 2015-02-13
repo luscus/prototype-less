@@ -1,0 +1,16 @@
+{
+  "name": "prototype-less",
+  "version": "0.1.2",
+  "dependencies": {
+    "node.extend": {
+      "version": "1.1.2",
+      "from": "node.extend@1.1.2",
+      "dependencies": {
+        "is": {
+          "version": "2.0.2",
+          "from": "is@~2.0.0"
+        }
+      }
+    }
+  }
+}
