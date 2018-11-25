@@ -19,7 +19,7 @@
   "bugs": "https://github.com/luscus/prototype-less/issues",
   "main": "./lib/prototypeless.js",
   "dependencies": {
-    "node.extend": "1.1.6"
+    "node.extend": "2.0.2"
   },
   "devDependencies": {
     "grunt": "1.0.1",
